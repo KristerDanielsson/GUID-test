@@ -1,13 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1">
-  <POU Name="MAIN" Id="{fbc17a05-003d-431c-bcdc-3161c0370a21}">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.13">
+  <POU Name="MAIN" Id="{fbc17a05-003d-431c-bcdc-3161c0370a21}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM MAIN
 VAR
+	nisse: INT;
 END_VAR
-]]>
-    </Declaration>
+]]></Declaration>
     <Implementation>
-      <ST><![CDATA[]]></ST>
+      <ST><![CDATA[nisse:=nisse+1;
+]]></ST>
     </Implementation>
+    <LineIds Name="MAIN">
+      <LineId Id="2" Count="0" />
+      <LineId Id="7" Count="0" />
+    </LineIds>
   </POU>
 </TcPlcObject>
